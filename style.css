@@ -14,113 +14,6 @@ body {
   min-height: 100vh;
 }
 
-/* Navigation Bar */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
-}
-
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.brand-icon {
-  font-size: 24px;
-  animation: pulse 2s ease-in-out infinite;
-}
-
-.brand-text {
-  background: linear-gradient(45deg, #00ffff, #ff00ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.user-info {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.welcome-text {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
-}
-
-.logout-btn {
-  padding: 8px 16px;
-  background: rgba(255, 0, 128, 0.2);
-  border: 1px solid rgba(255, 0, 128, 0.3);
-  border-radius: 8px;
-  color: #ff0080;
-  font-size: 12px;
-  font-family: 'Orbitron', sans-serif;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.logout-btn:hover {
-  background: rgba(255, 0, 128, 0.3);
-  transform: scale(1.05);
-}
-
-.auth-links {
-  display: flex;
-  gap: 15px;
-}
-
-.nav-link {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  font-size: 14px;
-  padding: 8px 16px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
-}
-
-.nav-link:hover {
-  color: #00ffff;
-  border-color: rgba(0, 255, 255, 0.3);
-  background: rgba(0, 255, 255, 0.1);
-}
-
-.register-link {
-  background: rgba(0, 255, 255, 0.1);
-  border-color: rgba(0, 255, 255, 0.3);
-  color: #00ffff;
-}
-
-.register-link:hover {
-  background: rgba(0, 255, 255, 0.2);
-  transform: scale(1.05);
-}
-
 /* Background Animation */
 .background-animation {
   position: fixed;
@@ -188,7 +81,6 @@ body {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: #00ffff rgba(255, 255, 255, 0.1);
-  padding-top: 80px; /* Account for fixed navbar */
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -214,7 +106,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
   position: relative;
 }
 
@@ -493,23 +385,6 @@ select option {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .nav-container {
-    padding: 12px 15px;
-  }
-  
-  .nav-brand {
-    font-size: 16px;
-  }
-  
-  .brand-icon {
-    font-size: 20px;
-  }
-  
-  .nav-link {
-    font-size: 12px;
-    padding: 6px 12px;
-  }
-  
   .container {
     padding: 15px;
   }
@@ -536,21 +411,6 @@ select option {
 }
 
 @media (max-width: 480px) {
-  .nav-container {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px 15px;
-  }
-  
-  .nav-menu {
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .scroll-container {
-    padding-top: 120px;
-  }
-  
   .container {
     padding: 10px;
   }
