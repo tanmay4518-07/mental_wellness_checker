@@ -1,0 +1,17 @@
+{
+  "name": "mental-wellness-checker",
+  "version": "1.0.0",
+  "description": "A mental wellness assessment tool with glassmorphism design",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server . -p 3000 -o",
+    "start": "http-server . -p 3000",
+    "build": "echo 'Build complete - static files ready'"
+  },
+  "keywords": ["mental-health", "wellness", "assessment", "glassmorphism"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
